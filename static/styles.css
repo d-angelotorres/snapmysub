@@ -1,0 +1,104 @@
+/* static/styles.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .container {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 640px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.01);
+  }
+  
+  input {
+    padding: 0.75rem;
+    width: 65%;
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #ff4500;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #ff8717;
+    box-shadow: 0 0 12px #ff8717aa;
+  }
+  
+  button {
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #ff6a2d;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff6a2d88;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    animation: fadeIn 0.6s ease-in-out forwards;
+  }
+  
+  #error {
+    color: #ff5555;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  #results > div {
+    background: #262626;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.1);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #loader {
+    margin: 20px auto;
+    border: 6px solid #1e1e1e;
+    border-top: 6px solid #ff4500;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

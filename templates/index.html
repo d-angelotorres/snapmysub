@@ -1,0 +1,46 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subreddit Avatar + Banner Viewer</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Subreddit Avatar + Banner Viewer</h1>
+      <input
+        type="text"
+        id="subredditInput"
+        placeholder="Enter subreddit name or link"
+      />
+      <button id="fetchBtn">Get Images</button>
+      <div id="loader" style="display: none"></div>
+
+      <div id="error" style="color: red"></div>
+
+      <div id="results">
+        <div>
+          <h2>Avatar</h2>
+          <img
+            id="avatar"
+            src=""
+            alt="Avatar"
+            style="max-width: 200px; display: none"
+          />
+        </div>
+        <div>
+          <h2>Banner</h2>
+          <img
+            id="banner"
+            src=""
+            alt="Banner"
+            style="max-width: 400px; display: none"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
