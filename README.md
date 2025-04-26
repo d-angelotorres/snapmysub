@@ -1,4 +1,4 @@
-# Subreddit Avatar + Banner Viewer 🔥
+# Snap My Sub
 
 A simple web tool that fetches and displays a subreddit's avatar and banner images based on user input.
 
@@ -30,9 +30,19 @@ A simple web tool that fetches and displays a subreddit's avatar and banner imag
 
 ---
 
-## Live Demo
+> 🟢 **Live Now at [snapmysub.com](https://snapmysub.com)**
 
-_(Coming soon)_
+---
+
+## Demo
+
+![Demo of the App](demo.gif)
+
+---
+
+## Version 1.0
+
+![Original Version](version1.png)
 
 ---
 
