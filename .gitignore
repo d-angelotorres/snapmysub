@@ -1,1 +1,31 @@
+# Ignore system files
 .DS_Store
+
+# Python stuff
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files (if you ever use virtualenv)
+env/
+venv/
+ENV/
+*.env
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Flask/Python specific
+instance/
+*.db
+
+# MacOS metadata
+.AppleDouble
+.LSOverride
+
+# Other
+*.log
